@@ -1,0 +1,44 @@
+{
+  "name": "vue-colorful-background",
+  "version": "1.0.0",
+  "description": "make a colorful background by vue directive",
+  "main": "dist/vue-colorful-background.js",
+  "scripts": {
+    "dev": "webpack-dev-server --open --config webpack.dev.js",
+    "build:ex": "webpack --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:css": "stylelint **/src/**/*.{css,vue,html,vue,md} --fix",
+    "lint:js": "eslint src test *.js --ext .js,.vue --fix",
+    "release": "npm run lint && npm run build && npm run build:ex"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/escX/vue-colorful-background.git"
+  },
+  "keywords": [
+    "vue-directive",
+    "colorful-background"
+  ],
+  "author": "escX",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/escX/vue-colorful-background/issues"
+  },
+  "homepage": "https://github.com/escX/vue-colorful-background#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-loader": "^8.0.5",
+    "change-case": "^3.1.0",
+    "clean-webpack-plugin": "^2.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "vue": "^2.6.10",
+    "vue-loader": "^15.7.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-merge": "^4.2.1"
+  }
+}
