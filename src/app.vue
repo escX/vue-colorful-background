@@ -1,10 +1,6 @@
 <template>
-  <div id="app">
-    <div v-colorful.random="config">
-      {{test}}
-    </div>
-
-    <demo v-colorful></demo>
+  <div id="app" v-colorful.random>
+    <component-demo v-colorful="colorfulConfig"></component-demo>
   </div>
 </template>
 
@@ -12,19 +8,38 @@
 export default {
   data() {
     return {
-      test: 'colorful',
-      config: {
+      colorfulConfig: {
         duration: '2s',
         timing: 'ease-in',
-        colors: ['#000', '#fff'],
-        delay: 2000
-      }
-    }
+        colors: ['#000', '#333', '#666', '#999', '#ccc', '#fff'],
+        delay: 2000,
+      },
+    };
   },
   components: {
-    'demo': {
-      template: '<div id="demo">demo</div>'
+    'component-demo': {
+      render: h => h('div', {
+        style: {
+          width: '100px',
+          height: '100px',
+          position: 'absolute',
+          left: '50%',
+          top: '50%',
+          transform: 'translate(-50%, -50%)'
+        },
+      }),
     }
   }
-}
+};
 </script>
+
+<style>
+html, body {
+  margin: 0;
+  height: 100%;
+}
+#app {
+  width: 100%;
+  height: 100%;
+}
+</style>
