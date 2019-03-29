@@ -47,7 +47,7 @@ data () {
 
 ## Options
 
-| `Name` | `Type` | `Default` | `Description` |
+| Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `duration` | `String` | `2s` | 背景色过渡的耗时，其值与css属性transition-duration一致 |
 | `timing` | `String` | `ease-in` | 背景色渐变速度曲线，其值与css属性transition-timing-function一致 |
