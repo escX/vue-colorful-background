@@ -1,9 +1,7 @@
+import directive from './directive';
+
 export default {
   install(Vue) {
-    Vue.directive('colorful', {
-      inserted(el) {
-        el.style.color = 'red';
-      }
-    })
+    Vue.directive('colorful', directive);
   }
-}
+};

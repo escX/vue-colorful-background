@@ -12,6 +12,11 @@ module.exports = merge(common, {
     filename: 'main.js',
     path: path.resolve(__dirname, 'examples')
   },
+  resolve: {
+    alias: {
+      'vue': 'vue/dist/vue.js'
+    }
+  },
   plugins: [
     new CleanWebpackPlugin({
       cleanOnceBeforeBuildPatterns: ['*', '!src']
