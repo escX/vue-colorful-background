@@ -60,12 +60,12 @@ export default {
     const isRandom = Boolean(binding.modifiers.random);
     const renderColors = [...colors];
     if (isRandom) {
-      const _colors = [...colors];
-      const colorLength = _colors.length;
+      const copyColors = [...colors];
+      const colorLength = copyColors.length;
 
       renderColors.length = 0;
       for (let i=0; i<colorLength; i++) {
-        const color = getRandomColor(_colors);
+        const color = getRandomColor(copyColors);
         renderColors.push(color);
       }
     }
@@ -87,6 +87,7 @@ export default {
       });
     }, renderStyleDelay);
   },
+
   unbind(el) {
     isBind = false;
     el.style = elStyle;
