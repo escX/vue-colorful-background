@@ -1,6 +1,8 @@
 # vue-colorful-background
 使用`vue`指令生成一个背景色不断切换的节点
 
+![gif](./v-colorful.gif)
+
 ## Install
 
 ```shell
@@ -11,16 +13,7 @@ npm install vue-colorful-background
 
 ```js
 import VueColorfulBackground from 'vue-colorful-background'
-```
 
-或者通过`<script>`引用
-
-```html
-<script src="/path/to/vue.js"></script>
-<script src="/path/to/vue-colorful-background.js"></script>
-```
-
-```js
 // 全局注册
 Vue.use(VueColorfulBackground)
 
