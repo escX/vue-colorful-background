@@ -23,6 +23,7 @@ module.exports = merge(common, {
     filename: `${name}.js`,
     libraryTarget: 'umd',
     library: `${pascalCase(name)}`,
+    libraryExport: 'default',
     path: path.resolve(__dirname, 'dist')
   },
   plugins: [
