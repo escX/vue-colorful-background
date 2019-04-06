@@ -1,5 +1,5 @@
 # vue-colorful-background
-使用`vue`指令生成一个背景色不断切换的节点
+使用`vue`指令使节点背景色渐变切换
 
 ![demo gif](./v-colorful.gif)
 
