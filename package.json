@@ -1,13 +1,14 @@
 {
   "name": "vue-colorful-background",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "make a colorful background by vue directive",
   "main": "dist/vue-colorful-background.js",
   "scripts": {
     "dev": "webpack-dev-server --open --config webpack.dev.js",
     "build:ex": "webpack --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "release": "npm run build:ex && npm run build"
+    "release": "npm run build:ex && npm run build",
+    "gh": "git subtree push --prefix examples origin gh-pages"
   },
   "repository": {
     "type": "git",
