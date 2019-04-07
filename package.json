@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/escX/vue-colorful-background/issues"
   },
-  "homepage": "https://github.com/escX/vue-colorful-background#readme",
+  "homepage": "https://escx.github.io/vue-colorful-background/",
   "devDependencies": {
     "@babel/core": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
