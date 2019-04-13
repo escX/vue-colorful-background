@@ -1,7 +1,7 @@
 # vue-colorful-background
-使用`vue`指令使节点背景色渐变切换
+make a colorful background with vue directive
 
-![demo gif](./v-colorful.gif)
+[Live demo and usage](https://escx.github.io/vue-colorful-background/)
 
 ## Install
 
