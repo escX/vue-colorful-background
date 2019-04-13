@@ -1,5 +1,5 @@
 # vue-colorful-background
-make a colorful background with vue directive
+Make a colorful background with vue directive
 
 [Live demo and usage](https://escx.github.io/vue-colorful-background/)
 
