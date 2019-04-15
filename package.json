@@ -1,6 +1,6 @@
 {
   "name": "vue-colorful-background",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "Make a colorful background with vue directive",
   "main": "dist/vue-colorful-background.js",
   "scripts": {

@@ -20,13 +20,8 @@ import VueColorfulBackground from 'vue-colorful-background'
 ```
 
 ```js
-// 全局注册
+// main.js
 Vue.use(VueColorfulBackground)
-
-// 或者局部注册
-new Vue({
-  directives: {VueColorfulBackground}
-})
 ```
 
 ```html
